@@ -5,7 +5,7 @@ import threading
 
 # Initialize
 pygame.init()
-WIDTH, HEIGHT = 450, 600  # Increased width for sidebar
+WIDTH, HEIGHT = 550, 600  # Increased width for sidebar
 win = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Voice Controlled Tetris")
 
