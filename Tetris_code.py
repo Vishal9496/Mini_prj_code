@@ -270,14 +270,14 @@ def handle_voice(tetris):
     
         # English, Telugu, Hindi voice commands - expanded with variations
         left_cmds = [
-            "left", "move left", "go left", "to left", 
+            "left", "move left", "go left", "to left",
             "edama", "edamavaipu", "లెఫ్ట్", "ఎడమ", "ఎడమవైపు",
             "baayen", "baayein", "baayen", "baayaan", "बाएं", "बायें", "बाएँ",
             "बायां"
         ]
 
         right_cmds = [
-            "right", "move right", "go right", "to right", 
+            "right", "move right", "go right", "to right",
             "kudi", "kudivaipu", "రైట్", "కుడి", "కుడివైపు",
             "daayaan", "daayen", "daayen", "daahina",
             "दायां", "दाएं", "दाएँ", "दाहिना"
@@ -290,13 +290,13 @@ def handle_voice(tetris):
         ]
 
         down_cmds = [
-            "down", "move down", "go down", 
+            "down", "move down", "go down",
             "kinda", "డౌన్", "కింద",
             "neeche", "neeche jao", "नीचे", "नीचे जाओ"
         ]
 
         drop_cmds = [
-            "drop", "fall", "place", 
+            "drop", "fall", "place",
             "vadalandi", "drop", "డ్రాప్", "వదలండి",
             "chhodo", "drop", "छोड़ो", "ड्रॉप"
         ]
@@ -317,7 +317,7 @@ def handle_voice(tetris):
             # Check if the command contains any of the command strings
             if any(cmd_word in cmd_text for cmd_word in cmd_list):
                 return True
-            # Check if any command is similar to the text (approximate 
+            # Check if any command is similar to the text (approximate
             # matching)
             for cmd_word in cmd_list:
                 if cmd_word in cmd_text:
